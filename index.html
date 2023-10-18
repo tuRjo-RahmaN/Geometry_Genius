@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+
+    <!-- Tailwind-Connection -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.4/dist/full.css" rel="stylesheet" type="text/css" />
+
+    <!-- Font-Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <!-- Customization -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                semiBlack: 'rgba(17, 17, 17, 0.8)',
+                blck: "#414141"
+              },
+              fontFamily: {
+               inter: ['Inter', 'sans-serif'],
+              }
+            }
+          }
+        }
+      </script>
+
+</head>
+
+<body class="font-inter max-w-6xl mx-auto p-5">
+
+  <!-- Navbar -->
+    <header class="lg:flex justify-between items-center text-center bg-sky-100 rounded-lg px-6 py-3 my-8">
+        <div>
+            <h1 class="text-2xl font-semibold text-semiBlack">Interactive</h1>
+            <h3 class="text-semiBlack">Geometry Genius</h3>
+        </div>
+
+        <button id="blog-btn" class="text-white text-sm bg-sky-600 hover:bg-sky-400 rounded-lg h-8 w-20 lg:mt-0 mt-5">Blog</button>
+    </header>
+
+    <main>
+
+      <div class="lg:flex ">
+        <section class="grid lg:grid-cols-3 md:grid-cols-2 gap-4 text-blck text-center mb-20 lg:w-3/4">
+
+          <!-- Triangle Card -->
+          <div class="card bg-pink-300 rounded-md h-96 mb-10 lg:pt-0 pt-2">
+            <img class="h-28 mx-auto my-9" src="./images/triangle.png" alt="triangle" >
+            <h3 id="triangle" class="text-xl font-semibold mb-2">Triangle</h3>
+            <h6 class="text-xs font-light mb-3">Area(A) = 0.5 x b x h</h6>
+            <div class="flex gap-2 justify-center items-center text-xs font-medium mb-8">
+              <input id="tri-inp1" class="w-20 rounded p-1 bg-gray-200" type="text" placeholder="b">
+              <h6>cm</h6>
+              <input id="tri-inp2" class="w-20 rounded p-1 pl-2 bg-gray-200" type="text" placeholder="h">
+              <h6>cm</h6>
+            </div>
+            <button id="tri-btn" class="text-sm font-medium text-white bg-sky-600 hover:bg-sky-400 w-3/4 mx-auto p-2 rounded">Calculate</button>
+          </div>
+  
+          <!-- Rectangle Card -->
+          <div class="card rounded-md border-2 mb-10 pb-7">
+            <img class="h-28 mx-auto my-9" src="./images/rectangle.png" alt="">
+            <h3 id="rectangle" class="text-xl font-semibold mb-2">Rectangle</h3>
+            <h6 class="text-xs font-light mb-3">Area(A) = w x l</h6>
+            <div class="flex gap-2 justify-center items-center text-xs font-medium mb-8">
+              <input id="rec-inp1" class="w-20 rounded p-1 bg-gray-200" type="text" placeholder="w">
+              <h6>cm</h6>
+              <input id="rec-inp2" class="w-20 rounded p-1 pl-2 bg-gray-200" type="text" placeholder="l">
+              <h6>cm</h6>
+            </div>
+            <button id="rec-btn" class="text-sm font-medium text-white bg-sky-600 hover:bg-sky-400 w-3/4 mx-auto p-2 rounded">Calculate</button>
+          </div>
+  
+          <!-- Parallelogram Card -->
+          <div class="card rounded-md border-2 mb-10 pb-7">
+            <img class="h-28 mx-auto my-9" src="./images/parallelogram.png" alt="">
+            <h3 id="parallelogram" class="text-xl font-semibold mb-2">Parallelogram</h3>
+            <h6 class="text-xs font-light mb-2">Area(A) = b x h</h6>
+            <div class="flex gap-2 justify-center items-center text-xs font-medium mb-8">
+              <input id="para-inp1" class="w-20 rounded p-1 bg-gray-200" type="text" placeholder="b">
+              <h6>cm</h6>
+              <input id="para-inp2" class="w-20 rounded p-1 pl-2 bg-gray-200" type="text" placeholder="h">
+              <h6>cm</h6>
+            </div>
+            <button id="para-btn" class="text-sm font-medium text-white bg-sky-600 hover:bg-sky-400 w-3/4 p-2 mx-auto rounded">Calculate</button>
+          </div>
+  
+          <!-- Rhombus Card -->
+          <div class="card bg-sky-300 rounded-md h-96 border mb-10">
+            <img class="h-28 mx-auto my-9" src="./images/rhombus.png" alt="">
+            <h3 id="rhombus" class="text-xl font-semibold mb-2">Rhombus</h3>
+            <h6 class="text-xs font-light mb-2">Area(A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></h6>
+            <div class="flex gap-2 justify-center items-center text-xs font-medium mb-8">
+              <input id="rho-inp1" class="w-20 rounded p-1 bg-gray-200" type="text" placeholder="d1">
+              <h6>cm</h6>
+              <input id="rho-inp2" class="w-20 rounded p-1 pl-2 bg-gray-200" type="text" placeholder="d2">
+              <h6>cm</h6>
+            </div>
+            <button id="rhom-btn" class="text-sm font-medium text-white bg-sky-600 hover:bg-sky-400 w-3/4 p-2 mx-auto rounded">Calculate</button>
+          </div>
+  
+          <!-- Pentagon Card -->
+          <div class="card rounded-md border-2 mb-10 pb-7">
+            <img class="h-28 mx-auto my-9" src="./images/pentagon.png" alt="">
+            <h3 id="pentagon" class="text-xl font-semibold mb-2">Pentagon</h3>
+            <h6 class="text-xs font-light mb-2">Area(A) = 0.5 x p x b</h6>
+            <div class="flex gap-2 justify-center items-center text-xs font-medium mb-8">
+              <input id="pent-inp1" class="w-20 rounded p-1 bg-gray-200" type="text" placeholder="p">
+              <h6>cm</h6>
+              <input id="pent-inp2" class="w-20 rounded p-1 pl-2 bg-gray-200" type="text" placeholder="b">
+              <h6>cm</h6>
+            </div>
+            <button id="pent-btn" class="text-sm font-medium text-white bg-sky-600 hover:bg-sky-400 w-3/4 p-2 mx-auto rounded">Calculate</button>
+          </div>
+  
+          <!-- Ellipse Card -->
+          <div class="card rounded-md border-2 mb-10 pb-7">
+            <img class="h-28 mx-auto my-9" src="./images/ellipse.png" alt="">
+            <h3 id="ellipse" class="text-xl font-semibold mb-2">Ellipse</h3>
+            <h6 class="text-xs font-light mb-2">Area(A) =  兀 x a x b</h6>
+            <div class="flex gap-2 justify-center items-center text-xs font-medium mb-8">
+              <input id="elli-inp1" class="w-20 rounded p-1 bg-gray-200" type="text" placeholder="p">
+              <h6>cm</h6>
+              <input id="elli-inp2" class="w-20 rounded p-1 pl-2 bg-gray-200" type="text" placeholder="b">
+              <h6>cm</h6>
+            </div>
+            <button id="elli-btn" class="text-sm font-medium text-white bg-sky-600 hover:bg-sky-400 w-3/4 p-2 mx-auto rounded">Calculate</button>
+          </div>
+        </section>
+
+
+        <section class="border-2 h-80 w-80 lg:ml-4 rounded p-1 overflow-y-scroll mx-auto">
+          <h3 class="text-center font-semibold underline mb-3">Area Calculation</h3>
+          
+          <div class="text-xs font-light">
+
+            <table class="w-full text-center">
+              <tbody id="area-calc">
+              </tbody>
+            </table>
+
+          </div>
+
+        </section>
+        
+      </div>
+
+
+      <!-- JS Files -->
+      <script src="./js/randomColor.js"></script>
+      <script src="./js/checkValidation.js"></script>
+      <script src="./js/calculation.js"></script>
+
+      <script>
+        document.getElementById("blog-btn").addEventListener('click',function(){
+          window.location.href = 'blog.html';
+        })
+      </script>
+
+    </main>
+
+</body>
+
+</html>

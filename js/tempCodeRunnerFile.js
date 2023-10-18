@@ -1,0 +1,1 @@
+console.log(getSum(2, 7));

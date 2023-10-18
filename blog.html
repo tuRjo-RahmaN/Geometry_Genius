@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogs</title>
+
+  <!-- Tailwind-Connection -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- daisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.4/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font-Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+  
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/e0c787076f.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body class="font-inter mt-10 mx-5">
+  <section class="text-white text-center mb-10">
+      <h1 class="text-2xl bg-sky-400 p-5 rounded-lg max-w-2xl mx-auto">Q1. What is DOM    ?? What is the purpose of DOM ?</h1>
+
+      <p class="text-lg bg-sky-600 p-5 rounded-lg max-w-3xl mx-auto">DOM stands for Document Object Model. It is a programming interface that allows us to create, change, or remove elements from the document. We can also add events to these elements to make our page more dynamic. <br> <br> It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.</p>
+  </section>
+
+
+  <section class="text-white text-center mb-10">
+      <h1 class="text-2xl bg-amber-400 p-5 rounded-lg max-w-3xl mx-auto">Q2. In how many ways we can select elements from DOM ??</h1>
+
+      <p class="text-lg text-left bg-amber-500 p-5 rounded-lg max-w-4xl mx-auto">We can select elements from DOM in FIVE different ways: <br> <br><span class="font-semibold text-stone-900">1. getElementsByTagName(): </span>getElementsByTagName is used to get a list of elements with a specified TagName<br> <span class="font-semibold text-stone-900">2. getElementsByClassName(): </span> The getElementsByClassName() method is used for selecting or getting the elements through their class name value.<br> <span class="font-semibold text-stone-900">3. getElementById(): </span>The getElementById() method returns an element with a specified value. The getElementById() method returns null if the element does not exist. The getElementById() method is one of the most common methods in the HTML DOM.<br> <span class="font-semibold text-stone-900">4. querySelector(): </span>The querySelector() method allows you to select the first element that matches one or more CSS selectors.<br> <span class="font-semibold text-stone-900">5. querySelectorAll(): </span>The querySelectorAll() method returns a collection of an element's child elements that match a specified CSS selector(s), as a static NodeList object.</p>
+  </section>
+
+  <section class="text-white text-center mb-10">
+      <h1 class="text-2xl bg-pink-400 p-5 rounded-lg max-w-2xl mx-auto">Q3. What is event bubbling ??</h1>
+
+      <p class="text-lg bg-pink-500 p-5 rounded-lg max-w-3xl mx-auto">When an event is triggered on an element, for example a mouse click on a button, the same event is also triggered on all of that element's ancestors. This process is known as event bubbling.</p>
+  </section>
+
+  <section class="text-white text-center mb-10">
+      <h1 class="text-2xl bg-stone-500 p-5 rounded-lg max-w-2xl mx-auto">Q4. What is call back function?</h1>
+
+      <p class="text-lg bg-stone-600 p-5 rounded-lg max-w-3xl mx-auto"> Any function that is passed as an argument to another function so that it can be executed in that other function is called as a callback function.</p>
+  </section>
+
+  <button id="prevPage-btn" class="lg:inline flex items-center gap-2 text-sm font-medium text-white bg-sky-500 hover:bg-red-500 p-3 mx-auto rounded mb-20"><i class="fa-solid fa-backward"></i> Previous Page</button>
+
+  <script>
+  document.getElementById("prevPage-btn").addEventListener('click',function()
+  {
+    window.location.href = 'index.html';
+  })
+  </script>
+</body>
+</html>
