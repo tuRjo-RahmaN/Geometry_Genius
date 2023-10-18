@@ -1,2 +1,2 @@
-Code Link - https://github.com/programming-hero-web-course2/b7a5-geometry-genius-assignment-TurjoXX
-Live Site - https://prismatic-empanada-676c23.netlify.app
+*Code Link - https://github.com/tuRjo-RahmaN/Geometry_Genius
+*Live Site - https://prismatic-empanada-676c23.netlify.app/
