@@ -1,2 +1,3 @@
 *Code Link - https://github.com/tuRjo-RahmaN/Geometry_Genius
-*Live Site - https://prismatic-empanada-676c23.netlify.app/
+
+*Live Site - https://whimsical-queijadas-23494e.netlify.app
